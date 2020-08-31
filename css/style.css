@@ -1,14 +1,14 @@
 /* KEYFRAMES */
-* {
-  box-sizing: border-box; }
-
 body {
   background-color: #1d2630;
+  font-family: Yekan;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap; }
+
+header svg {
+  width: 12rem;
+  margin: 1rem;
+  opacity: 1; }
 
 .box {
   display: flex;
@@ -18,7 +18,7 @@ body {
   position: relative;
   height: 0;
   width: 58%;
-  padding: 28%;
+  padding: 29% 0;
   border-radius: 50%;
   background: #1d2630;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.15), -8px -8px 12px 0 rgba(255, 255, 255, 0.15); }
@@ -27,27 +27,50 @@ body {
     border-radius: 999999px 999999px 999999px 999999px;
     position: relative;
     transition: height 0.5s ease;
-    height: 150%; }
+    height: 160%; }
+    .box:hover h2.h2watercolor {
+      color: cyan; }
+    .box:hover h2.h2greencolor {
+      color: lime; }
+    .box:hover h2.h2constcolor {
+      color: #ffd000; }
+    .box:hover .button {
+      transition: opacity .5s ease-out .25s;
+      opacity: 1; }
   .box .button {
     position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 80px;
-    padding: 20px;
+    left: 5.51875rem;
+    bottom: 1rem;
+    height: 2.2rem;
+    padding: .3rem;
     text-decoration: none;
-    width: 100%; }
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.15), -0.1rem -0.1rem 0.2rem 0 rgba(255, 255, 255, 0.15);
+    opacity: 0; }
+  .box .button a span {
+    padding-bottom: 0;
+    margin: 0; }
+  .box a.button span svg {
+    width: 1.5rem;
+    fill: #00ff00;
+    padding: .4rem;
+    margin: 0;
+    filter: grayscale(100%); }
+    .box a.button span svg:hover {
+      filter: grayscale(0%);
+      transition-duration: .2s; }
   .box .content {
     position: absolute;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 80px;
-    padding: 20px;
+    left: 1rem;
+    right: 1rem;
+    bottom: 3rem;
+    height: 2rem;
+    padding: 1rem;
     border-radius: 999px;
-    background: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,29 +79,34 @@ body {
     transition: .2s; }
   .box .content h2 {
     font-size: 20px;
-    color: #fff;
+    color: gray;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 1px; }
-  .box .content h2 span {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 200;
-    letter-spacing: 2px; }
+    letter-spacing: 1px;
+    padding: 1rem;
+    margin: 1rem; }
   .box:hover .content {
     transition: opacity .5s ease-out .25s;
     opacity: 1; }
+  .box .content a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: yekan;
+    color: gray;
+    transition: color 0.3 ease; }
+    .box .content a span:hover {
+      color: cyan; }
 
 .box .imgBx {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   padding: 0;
   border-radius: 50%; }
   .box .imgBx:hover {
-    border-radius: 99999px 999999px 99999px 99999px; }
+    border-radius: 50%; }
 
 .box .imgBx img {
   width: 100%;
@@ -90,28 +118,21 @@ body {
   .box .imgBx img:hover {
     filter: grayscale(0%);
     transition: .5s; }
-  .box .imgBx img:hover.watercolor {
-    filter: grayscale(0%);
-    border: 3px solid cyan;
-    box-shadow: 0 0 12px cyan; }
-  .box .imgBx img:hover.greencolor {
-    filter: grayscale(0%);
-    border: 3px solid lime;
-    box-shadow: 0 0 12px lime; }
-  .box .imgBx img:hover.constcolor {
-    filter: grayscale(0%);
-    border: 3px solid #ffd000;
-    box-shadow: 0 0 12px #ffd000; }
 
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sahel;
-  color: gray;
-  transition: color 0.3 ease; }
-  a:hover {
-    color: cyan; }
+#bluebox:hover .watercolor {
+  filter: grayscale(0%);
+  border: 3px solid cyan;
+  box-shadow: 0 0 12px cyan; }
+
+#greenbox:hover .greencolor {
+  filter: grayscale(0%);
+  border: 3px solid lime;
+  box-shadow: 0 0 12px lime; }
+
+#yellowbox:hover .constcolor {
+  filter: grayscale(0%);
+  border: 3px solid #ffd000;
+  box-shadow: 0 0 12px #ffd000; }
 
 [class*="col-"] {
   display: flex;
