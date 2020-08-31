@@ -7,8 +7,10 @@ body {
 
 header svg {
   width: 12rem;
-  margin: 1rem;
-  opacity: 1; }
+  margin: 1rem; }
+  header svg path, header svg polygon {
+    opacity: 1;
+    fill: white; }
 
 .box {
   display: flex;
