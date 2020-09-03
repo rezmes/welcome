@@ -1,4 +1,10 @@
 /* KEYFRAMES */
+@font-face {
+  font-family: 'Yekan';
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.eot");
+  src: url("https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.woff") format("woff"), url("https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.ttf") format("truetype");
+  font-weight: bold; }
+
 body {
   background-color: #1d2630;
   font-family: Yekan;
@@ -28,6 +34,7 @@ header svg {
     filter: grayscale(0%);
     border-radius: 999999px 999999px 999999px 999999px;
     position: relative;
+    margin: auto;
     transition: height 0.5s ease;
     height: 160%; }
     .box:hover h2.h2watercolor {
@@ -41,8 +48,8 @@ header svg {
       opacity: 1; }
   .box .button {
     position: absolute;
-    left: 5.51875rem;
     bottom: 1rem;
+    margin: auto;
     height: 2.2rem;
     padding: .3rem;
     text-decoration: none;
@@ -83,10 +90,10 @@ header svg {
     font-size: 20px;
     color: gray;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.2rem;
     letter-spacing: 1px;
-    padding: 1rem;
-    margin: 1rem; }
+    padding: 0.5rem;
+    margin: 3rem 20px 3rem 20px; }
   .box:hover .content {
     transition: opacity .5s ease-out .25s;
     opacity: 1; }
@@ -140,3 +147,7 @@ header svg {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+#tphdrphonegreen {
+  color: lime;
+  font-family: "yekan"; }
