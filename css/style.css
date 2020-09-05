@@ -36,7 +36,7 @@ header svg {
     position: relative;
     margin: auto;
     transition: height 0.5s ease;
-    height: 160%; }
+    height: 148%; }
     .box:hover h2.h2watercolor {
       color: cyan; }
     .box:hover h2.h2greencolor {
@@ -150,4 +150,7 @@ header svg {
 
 #tphdrphonegreen {
   color: lime;
-  font-family: "yekan"; }
+  display: flex; }
+  #tphdrphonegreen > * {
+    padding: 0 .5rem;
+    font-size: 1rem; }
