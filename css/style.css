@@ -149,8 +149,11 @@ header svg {
   justify-content: center; }
 
 #tphdrphonegreen {
-  color: lime;
   display: flex; }
   #tphdrphonegreen > * {
     padding: 0 .5rem;
     font-size: 1rem; }
+
+@media screen and (min-width: 922px) {
+  #tphdrphonegreen {
+    color: lime; } }

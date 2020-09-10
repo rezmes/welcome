@@ -1,5 +1,7 @@
 @import "function.scss"
 @import "variable.scss"
+@import "include-media.scss"
+
 @font-face 
     font-family: 'Yekan'
     src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan-Bold.eot')
@@ -190,8 +192,9 @@ header svg
     // padding: 0
 //========================================================top header green========================================
 #tphdrphonegreen
-    color: $greenflur
     display: flex
     > *
-        padding: 0 .5rem
-        font-size: 1rem
+            padding: 0 .5rem
+            font-size: 1rem
+    @include media("screen", ">desktop")
+        color: $greenflur
