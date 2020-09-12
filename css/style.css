@@ -157,3 +157,10 @@ header svg {
 @media screen and (min-width: 922px) {
   #tphdrphonegreen {
     color: lime; } }
+
+#leftlowfooter span {
+  color: white;
+  font-size: 12px; }
+  #leftlowfooter span a strong {
+    color: lime;
+    text-decoration: none; }
