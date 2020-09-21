@@ -143,7 +143,7 @@ header svg {
   border: 3px solid #ffd000;
   box-shadow: 0 0 12px #ffd000; }
 
-[class*="col-"] {
+[class*="startpage"] {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -164,3 +164,12 @@ header svg {
   #leftlowfooter span a strong {
     color: lime;
     text-decoration: none; }
+
+.elementor-progress-percentage {
+  color: black;
+  overflow: visible;
+  font-size: 15px;
+  line-height: 20px;
+  box-sizing: content-box;
+  position: relative;
+  bottom: 25px; }
